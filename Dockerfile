@@ -11,7 +11,7 @@ ENV JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8
 RUN apt-get update && apt-get install -y git
 
 # Copy in the source
-RUN git clone --branch 1.13.0 https://github.com/opennetworkinglab/onos.git onos
+RUN git clone --branch 1.13.1 https://github.com/opennetworkinglab/onos.git onos
 RUN pwd
 RUN mkdir -p /src/
 RUN cp -R onos /src/
